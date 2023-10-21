@@ -1,0 +1,48 @@
+<%= image_tag("Group 1.svg", class:"logo") %>
+<%= image_tag("Group 2.svg", class:"menu")%>
+<div class="models-container">
+  <ul>
+    <li class = "model" id = "photo-1"><%= image_tag("sunglass_model1.png", id:"model-1") %></li>
+    <li class = "model" id = "photo-2"><%= image_tag("sunglass_model2.png", id:"model-2") %></li>
+    <li class = "model" id = "photo-3"><%= image_tag("sunglass_model3.png", id:"model-3") %></li>
+    <li class = "model" id = "photo-4"><%= image_tag("sunglass_model4.png", id:"model-4") %></li>
+  </ul>
+</div>
+<ul class="columns-container" data-controller="column">
+  <li class="column model-1" data-action="mouseenter->column#show mouseleave->column#hide click->column#fullscreen" id="1">
+    <div class="column-top">
+      <p class="serial">X1 001</p>
+      <p class="name">ANIMUS SPORTIVE</p>
+    </div>
+    <div class="number">
+      <p>01</p>
+    </div>
+  </li>
+  <li class="column model-2" data-action="mouseenter->column#show mouseleave->column#hide click->column#fullscreen" id="2">
+    <div class="column-top">
+      <p class="serial">Y2 002</p>
+      <p class="name">ANNE ELEGANCE</p>
+    </div>
+    <div class="number">
+      <p>02</p>
+    </div>
+  </li>
+  <li class="column model-3" data-action="mouseenter->column#show mouseleave->column#hide click->column#fullscreen" id="3">
+    <div class="column-top">
+      <p class="serial">X3 001</p>
+      <p class="name">ALLOE MODERNITY</p>
+    </div>
+    <div class="number">
+      <p>03</p>
+    </div>
+  </li>
+  <li class="column model-4" data-action="mouseenter->column#show mouseleave->column#hide click->column#fullscreen" id="4">
+    <div class="column-top">
+      <p class="serial">X1 002</p>
+      <p class="name">ASTRA SOPHISTIQ</p>
+    </div>
+    <div class="number">
+      <p>04</p>
+    </div>
+  </li>
+</ul>
